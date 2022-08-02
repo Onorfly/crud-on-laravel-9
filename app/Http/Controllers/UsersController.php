@@ -54,7 +54,7 @@ class UsersController extends Controller
      */
     public function show(User $user)
     {
-        return view(view: 'show');
+        return view(view: 'show', data: compact('user'));
     }
 
     /**
@@ -73,7 +73,7 @@ class UsersController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\User  $user
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request, User $user)
     {
