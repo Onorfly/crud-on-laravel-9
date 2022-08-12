@@ -8,7 +8,7 @@
 
 cd /var/www
 
-git clone ... folder
+git clone https://github.com/Onorfly/crud-on-laravel-9.git folder
 
 cd folder
 
